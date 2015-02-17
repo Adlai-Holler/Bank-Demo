@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CC705FA11A92CC5400CC2A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FA01A92CC5400CC2A3E /* AppDelegate.swift */; };
-		CC705FA31A92CC5400CC2A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FA21A92CC5400CC2A3E /* ViewController.swift */; };
 		CC705FA61A92CC5400CC2A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC705FA41A92CC5400CC2A3E /* Main.storyboard */; };
 		CC705FA81A92CC5400CC2A3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC705FA71A92CC5400CC2A3E /* Images.xcassets */; };
 		CC705FAB1A92CC5400CC2A3E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC705FA91A92CC5400CC2A3E /* LaunchScreen.xib */; };
 		CC705FB71A92CC5400CC2A3E /* Bank_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FB61A92CC5400CC2A3E /* Bank_MVVMTests.swift */; };
+		CC705FC11A92CC9A00CC2A3E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FC01A92CC9A00CC2A3E /* Transaction.swift */; };
+		CC705FC41A92CD4600CC2A3E /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FC31A92CD4600CC2A3E /* TransactionListViewModel.swift */; };
+		CC705FC81A92CE2600CC2A3E /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FC71A92CE2600CC2A3E /* TransactionViewModel.swift */; };
+		CC705FCA1A92D0A900CC2A3E /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC705FC91A92D0A900CC2A3E /* SampleData.plist */; };
+		CC705FCF1A92D10D00CC2A3E /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FCE1A92D10D00CC2A3E /* TransactionListViewController.swift */; };
+		CC705FD11A92D12000CC2A3E /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC705FD01A92D12000CC2A3E /* TransactionCell.swift */; };
+		E5D3A5D1583705276B1EDFB6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A832D16F7A5D6860DF300C1D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4232D9EB2D13D4FDA764D926 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A832D16F7A5D6860DF300C1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC705F9B1A92CC5400CC2A3E /* Bank-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC705F9F1A92CC5400CC2A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC705FA01A92CC5400CC2A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC705FA21A92CC5400CC2A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC705FA51A92CC5400CC2A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC705FA71A92CC5400CC2A3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC705FAA1A92CC5400CC2A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CC705FB01A92CC5400CC2A3E /* Bank-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC705FB51A92CC5400CC2A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC705FB61A92CC5400CC2A3E /* Bank_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_MVVMTests.swift; sourceTree = "<group>"; };
+		CC705FC01A92CC9A00CC2A3E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CC705FC31A92CD4600CC2A3E /* TransactionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		CC705FC61A92CDD600CC2A3E /* Bank-MVVM-Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bank-MVVM-Bridging.h"; sourceTree = "<group>"; };
+		CC705FC71A92CE2600CC2A3E /* TransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		CC705FC91A92D0A900CC2A3E /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
+		CC705FCE1A92D10D00CC2A3E /* TransactionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		CC705FD01A92D12000CC2A3E /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		CD422C32112DE4CB760B1AB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D3A5D1583705276B1EDFB6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +72,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61A37671E9C956F40F86BE48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD422C32112DE4CB760B1AB0 /* Pods.debug.xcconfig */,
+				4232D9EB2D13D4FDA764D926 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BF6DEBE78AA2E112443CE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A832D16F7A5D6860DF300C1D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC705F921A92CC5400CC2A3E = {
 			isa = PBXGroup;
 			children = (
 				CC705F9D1A92CC5400CC2A3E /* Bank-MVVM */,
 				CC705FB31A92CC5400CC2A3E /* Bank-MVVMTests */,
 				CC705F9C1A92CC5400CC2A3E /* Products */,
+				61A37671E9C956F40F86BE48 /* Pods */,
+				7BF6DEBE78AA2E112443CE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +112,12 @@
 		CC705F9D1A92CC5400CC2A3E /* Bank-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				CC705FC91A92D0A900CC2A3E /* SampleData.plist */,
+				CC705FCD1A92D0DF00CC2A3E /* View */,
+				CC705FC61A92CDD600CC2A3E /* Bank-MVVM-Bridging.h */,
+				CC705FC51A92CD5A00CC2A3E /* View Model */,
+				CC705FC21A92CC9D00CC2A3E /* Model */,
 				CC705FA01A92CC5400CC2A3E /* AppDelegate.swift */,
-				CC705FA21A92CC5400CC2A3E /* ViewController.swift */,
 				CC705FA41A92CC5400CC2A3E /* Main.storyboard */,
 				CC705FA71A92CC5400CC2A3E /* Images.xcassets */,
 				CC705FA91A92CC5400CC2A3E /* LaunchScreen.xib */,
@@ -112,6 +151,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CC705FC21A92CC9D00CC2A3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC705FC01A92CC9A00CC2A3E /* Transaction.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC705FC51A92CD5A00CC2A3E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC705FC71A92CE2600CC2A3E /* TransactionViewModel.swift */,
+				CC705FC31A92CD4600CC2A3E /* TransactionListViewModel.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		CC705FCD1A92D0DF00CC2A3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC705FD01A92D12000CC2A3E /* TransactionCell.swift */,
+				CC705FCE1A92D10D00CC2A3E /* TransactionListViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC705FBA1A92CC5400CC2A3E /* Build configuration list for PBXNativeTarget "Bank-MVVM" */;
 			buildPhases = (
+				255E5B059D9D34BDCEB28CB4 /* Check Pods Manifest.lock */,
 				CC705F971A92CC5400CC2A3E /* Sources */,
 				CC705F981A92CC5400CC2A3E /* Frameworks */,
 				CC705F991A92CC5400CC2A3E /* Resources */,
+				91E654DEF612542FC2E974BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +228,7 @@
 				TargetAttributes = {
 					CC705F9A1A92CC5400CC2A3E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 79SFWPS5TA;
 					};
 					CC705FAF1A92CC5400CC2A3E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -194,6 +262,7 @@
 			files = (
 				CC705FA61A92CC5400CC2A3E /* Main.storyboard in Resources */,
 				CC705FAB1A92CC5400CC2A3E /* LaunchScreen.xib in Resources */,
+				CC705FCA1A92D0A900CC2A3E /* SampleData.plist in Resources */,
 				CC705FA81A92CC5400CC2A3E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,13 +276,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		255E5B059D9D34BDCEB28CB4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91E654DEF612542FC2E974BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC705F971A92CC5400CC2A3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC705FA31A92CC5400CC2A3E /* ViewController.swift in Sources */,
 				CC705FA11A92CC5400CC2A3E /* AppDelegate.swift in Sources */,
+				CC705FCF1A92D10D00CC2A3E /* TransactionListViewController.swift in Sources */,
+				CC705FD11A92D12000CC2A3E /* TransactionCell.swift in Sources */,
+				CC705FC11A92CC9A00CC2A3E /* Transaction.swift in Sources */,
+				CC705FC41A92CD4600CC2A3E /* TransactionListViewModel.swift in Sources */,
+				CC705FC81A92CE2600CC2A3E /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,21 +442,27 @@
 		};
 		CC705FBB1A92CC5400CC2A3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD422C32112DE4CB760B1AB0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bank-MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bank-MVVM/Bank-MVVM-Bridging.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CC705FBC1A92CC5400CC2A3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4232D9EB2D13D4FDA764D926 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bank-MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bank-MVVM/Bank-MVVM-Bridging.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +519,7 @@
 				CC705FBC1A92CC5400CC2A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC705FBD1A92CC5400CC2A3E /* Build configuration list for PBXNativeTarget "Bank-MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +528,7 @@
 				CC705FBF1A92CC5400CC2A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

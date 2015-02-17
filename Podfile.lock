@@ -1,0 +1,25 @@
+PODS:
+  - FormatterKit/TimeIntervalFormatter (1.8.0)
+  - PureLayout (2.0.5)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
+
+DEPENDENCIES:
+  - FormatterKit/TimeIntervalFormatter
+  - PureLayout
+  - ReactiveViewModel
+
+SPEC CHECKSUMS:
+  FormatterKit: 547a808c41172136a3f3acb424ac9361d38bb32f
+  PureLayout: 63a3257320223e8edddcd3afb407445f85a6bf74
+  ReactiveCocoa: 313fc53cc9aeb2bbbc3f5f13c7eac16478d9af8f
+  ReactiveViewModel: 512224f801ea0a603fd394eed0f38bc662b64b9a
+
+COCOAPODS: 0.35.0

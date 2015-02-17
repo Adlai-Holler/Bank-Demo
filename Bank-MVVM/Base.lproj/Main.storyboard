@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cgP-Gp-PwF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Transaction List View Controller-->
+        <scene sceneID="7fb-IZ-2zU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="arj-pI-8Nk" customClass="TransactionListViewController" customModule="Bank_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="h76-mp-D4U">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="transactionCell" rowHeight="60" id="DvY-ND-sWO" customClass="TransactionCell" customModule="Bank_MVVM" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DvY-ND-sWO" id="Zd7-Nc-tVK">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$175.47" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nL-Fc-eNp">
+                                            <rect key="frame" x="526" y="17" width="65.5" height="25"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.71692537006578949" blue="0.1235608552631579" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, 5:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-lo-Qv2">
+                                            <rect key="frame" x="8" y="32" width="71.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amazon.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-NU-Sdi">
+                                            <rect key="frame" x="8" y="8" width="510" height="24"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="DvY-ND-sWO" id="yAE-Lv-y4g"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Re9-NU-Sdi" firstAttribute="top" secondItem="Zd7-Nc-tVK" secondAttribute="topMargin" id="JRX-jv-cMP"/>
+                                        <constraint firstItem="CB7-lo-Qv2" firstAttribute="leading" secondItem="Zd7-Nc-tVK" secondAttribute="leadingMargin" id="SM3-td-Ohp"/>
+                                        <constraint firstItem="0nL-Fc-eNp" firstAttribute="leading" secondItem="Re9-NU-Sdi" secondAttribute="trailing" constant="8" id="ba4-Pk-a4J"/>
+                                        <constraint firstItem="Re9-NU-Sdi" firstAttribute="leading" secondItem="Zd7-Nc-tVK" secondAttribute="leadingMargin" id="c8o-C8-Zos"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CB7-lo-Qv2" secondAttribute="bottom" id="gFk-Uh-Ubd"/>
+                                        <constraint firstAttribute="centerY" secondItem="0nL-Fc-eNp" secondAttribute="centerY" id="mDA-6t-Sa7"/>
+                                        <constraint firstItem="0nL-Fc-eNp" firstAttribute="trailing" secondItem="Zd7-Nc-tVK" secondAttribute="trailingMargin" id="xLE-VB-xqD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="0nL-Fc-eNp" id="4TW-gq-9Y0"/>
+                                    <outlet property="dateLabel" destination="CB7-lo-Qv2" id="pzE-zC-rXi"/>
+                                    <outlet property="titleField" destination="Re9-NU-Sdi" id="gkk-pa-CJe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="arj-pI-8Nk" id="0jM-Nh-6cP"/>
+                            <outlet property="delegate" destination="arj-pI-8Nk" id="Cea-02-tQs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4Hz-F0-oZy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vi-rN-VON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1471" y="662"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GaA-wk-3TL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cgP-Gp-PwF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1SA-YM-tJr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="arj-pI-8Nk" kind="relationship" relationship="rootViewController" id="iI3-OC-9aq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smr-Zg-wIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="662"/>
         </scene>
     </scenes>
 </document>
